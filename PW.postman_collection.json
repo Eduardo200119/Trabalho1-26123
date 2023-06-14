@@ -1,0 +1,220 @@
+{
+	"info": {
+		"_postman_id": "7ef2ecfb-aa65-4af8-bd44-94993c3602f2",
+		"name": "PW",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25913311",
+		"_collection_link": "https://solar-satellite-2514.postman.co/workspace/Team-Workspace~1dbc22df-fcb6-4d7d-88a2-7961b2fe62bd/collection/25913311-7ef2ecfb-aa65-4af8-bd44-94993c3602f2?action=share&creator=25913311&source=collection_link"
+	},
+	"item": [
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "http://localhost:4242/api/user/login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"username\": \"pw\",\n  \"password\": \"pw\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4242/api/user/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4242",
+							"path": [
+								"api",
+								"user",
+								"login"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Experience",
+			"item": [
+				{
+					"name": "http://localhost:4242/api/experience/delete/3",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJwdyIsImJhdGF0YXMiOjIsImlhdCI6MTY4NjQ4MDYwNCwiZXhwIjoxNjg2NDg0MjA0fQ.ViLOJ40PYZD0pv0sZcN8cc1iYVPjdbJnT5RCze5WTSU",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4242/api/experience/delete/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4242",
+							"path": [
+								"api",
+								"experience",
+								"delete",
+								"3"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Profile",
+			"item": [
+				{
+					"name": "http://localhost:4242/api/profile/create",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJwdyIsImJhdGF0YXMiOjIsImlhdCI6MTY4NjM0MzY3NCwiZXhwIjoxNjg2MzQ3Mjc0fQ.mNFWKlEauZG7A4P2jx3MhvrQt2tkcbz56kJ_jqKhnh8",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"age\": 50,\n    \"name\": \"Eduardo\",\n    \"bio\": \"Bio\",\n    \"location\": \"Amares\",\n    \"email\": \"eduardo@mail.com\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4242/api/profile/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4242",
+							"path": [
+								"api",
+								"profile",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:4242/api/profile/getAll",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJwdyIsImJhdGF0YXMiOjIsImlhdCI6MTY4NjM0MzY3NCwiZXhwIjoxNjg2MzQ3Mjc0fQ.mNFWKlEauZG7A4P2jx3MhvrQt2tkcbz56kJ_jqKhnh8",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:4242/api/profile/getAll",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4242",
+							"path": [
+								"api",
+								"profile",
+								"getAll"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Academic",
+			"item": [
+				{
+					"name": "http://localhost:4242/api/academic/create",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwidXNlcm5hbWUiOiJwdyIsImJhdGF0YXMiOjIsImlhdCI6MTY4NjM0MzY3NCwiZXhwIjoxNjg2MzQ3Mjc0fQ.mNFWKlEauZG7A4P2jx3MhvrQt2tkcbz56kJ_jqKhnh8",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n      \"name\" :  \"eduardo\",\n      \"field\" : \"ipvc\",\n      \"degree\" : \"makm\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:4242/api/academic/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4242",
+							"path": [
+								"api",
+								"academic",
+								"create"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
